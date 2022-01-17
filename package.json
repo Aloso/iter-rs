@@ -6,7 +6,7 @@
     "start": "parcel index.html --open",
     "build": "parcel build index.html --dist-dir=./dist",
     "lint:code": "eslint --ext ts,tsx src",
-    "clean": "rimraf ../dist"
+    "clean": "rimraf ./dist"
   },
   "keywords": [],
   "author": "",
