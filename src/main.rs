@@ -23,10 +23,24 @@ async fn main() {
         get_service(ServeDir::new("iter-rs/dist")).handle_error(handle_io_error),
     );
 
-    eprintln!("App running on {addr}");
+    eprintln!("App serving files on {addr}");
+
+    if let Err(e) = list_files("./iter-rs/dist") {
+        eprintln!("Error: {e}");
+        return;
+    }
 
     axum::Server::bind(&addr)
         .serve(app.into_make_service())
         .await
         .unwrap();
+}
+
+fn list_files(dir: &str) -> Result<(), std::io::Error> {
+    for entry in std::fs::read_dir(dir)? {
+        let entry = entry?.file_name();
+        let entry = entry.to_string_lossy();
+        eprintln!("  - {entry}");
+    }
+    Ok(())
 }
