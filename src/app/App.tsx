@@ -2,10 +2,22 @@ import React, { ReactNode } from 'react'
 import Code from '../code/Code'
 import Table from '../table/Table'
 import * as s from './App.module.scss'
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import gh from '../../assets/gh.svg'
 
 export default function App() {
   return (
     <>
+      <a
+        href="https://github.com/Aloso/iter-rs"
+        target="_blank"
+        rel="noreferrer"
+        title="View on GitHub"
+        className={s.logo}
+      >
+        <img src={gh} alt="GitHub" />
+      </a>
       <h1>Iterator</h1>
       <p>
         <a

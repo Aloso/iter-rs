@@ -5,7 +5,7 @@ View this website on <https://iter-rs.herokuapp.com>.
 ## Run locally
 
 ```sh
-npm ci
+npm install
 npm start
 ```
 
