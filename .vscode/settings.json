@@ -1,0 +1,3 @@
+{
+    "typescript.tsdk": "./iter-rs/iter-rs/node_modules/typescript/lib"
+}

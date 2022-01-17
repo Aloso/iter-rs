@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+
+    /* Language and Environment */
+    "target": "ES6",
+    "lib": ["ES6", "DOM"],
+    "jsx": "react",
+
+    /* Modules */
+    "module": "ES6",
+    // "rootDir": "./",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "typeRoots": ["node_modules/@types"],
+
+    /* Interop Constraints */
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Type Checking */
+    "strict": true,
+
+    /* Completeness */
+    "skipLibCheck": true
+  }
+}

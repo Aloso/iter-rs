@@ -1,0 +1,50 @@
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 17px;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2.6rem;
+}
+
+a:link,
+a:visited {
+  color: #0059ff;
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline 1.2px;
+    text-underline-offset: 2px;
+    outline: none;
+  }
+}
+
+code {
+  font-family: Roboto Mono, monospace;
+  font-size: 95%;
+  margin: 0 4px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.sticky-table-cell {
+  position: sticky;
+  top: 50px;
+  z-index: 0;
+}

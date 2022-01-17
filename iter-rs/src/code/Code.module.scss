@@ -1,0 +1,56 @@
+i.c {
+  font-style: normal;
+}
+
+.pre {
+  white-space: pre;
+}
+
+.block {
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+.lc {
+  color: gray;
+}
+
+.bc {
+  color: #197a19;
+}
+
+.str {
+  color: darkred;
+}
+
+.char {
+  color: darkred;
+}
+
+.punct {
+  color: #666666;
+}
+
+.lt {
+  color: #a57807;
+}
+
+.kw {
+  color: #0048cf;
+}
+
+.num {
+  color: #008a12;
+}
+
+.attr {
+  color: #a57807;
+}
+
+.fn {
+  font-weight: 600;
+}
+
+.ty {
+  color: #007a70;
+}

@@ -1,0 +1,51 @@
+.table {
+  display: table;
+  width: calc(100% + 40px);
+  margin: 0 -20px;
+  border-collapse: collapse;
+  overflow: hidden;
+
+  tr:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+  }
+
+  thead {
+    position: sticky;
+    z-index: 1;
+    background-color: white;
+    top: 0;
+    box-shadow: inset 0 -2px #ddd;
+  }
+
+  tbody tr:hover {
+    // background-color: #f2f2f2;
+    transition: 0.1s;
+
+    td.rowspan {
+      background-color: white;
+    }
+  }
+
+  td,
+  th {
+    padding: 8px 15px;
+    text-align: start;
+    vertical-align: top;
+
+    &.start {
+      text-align: start;
+    }
+
+    &.center {
+      text-align: center;
+    }
+
+    &.end {
+      text-align: end;
+    }
+  }
+
+  th {
+    padding: 10px 15px;
+  }
+}

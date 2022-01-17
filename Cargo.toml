@@ -1,0 +1,16 @@
+[package]
+edition = "2021"
+license = "Apache-2 OR MIT"
+name = "iter-rs"
+version = "0.1.0"
+
+[dependencies]
+axum = "0.4"
+
+[dependencies.tokio]
+features = ["macros", "rt-multi-thread"]
+version = "1"
+
+[dependencies.tower-http]
+features = ["fs"]
+version = "0.2"
